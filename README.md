@@ -1,1 +1,1 @@
-# KOS-codes
+Bu isletim sistemi Python dilinde pratik yapmak isteyenler için açık kaynaklı bir MS-DOS promptudur.
