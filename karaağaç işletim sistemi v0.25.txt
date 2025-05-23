@@ -1,0 +1,44 @@
+print("Visionsoft Karaağaç Pratiksel İşletim Sistemi")
+anahtarkod = input("Anahtar Kodu Giriniz: ")
+
+while True:
+
+    if anahtarkod == "KK2025C":
+        terminal = input("Komut girdisi: ")
+        while True:
+
+            if terminal == "kapat":
+                exit() 
+    
+            if terminal == "toplama islemi":
+                tc1 = int(input("1.sayiyi giriniz: "))
+                tc2 = int(input("2.sayiyi giriniz: "))
+                print ("Sonuç: " , tc1 + tc2)
+                terminal = input("Komut giriniz: ")
+    
+            if terminal == "cikarma islemi":
+                cc1 = int(input("1.sayiyi giriniz: "))
+                cc2 = int(input("2.sayiyi giriniz: "))
+                print ("Sonuç: " , cc1 - cc2)
+                terminal = input("Komut giriniz: ")
+        
+            if terminal == "carpma islemi":
+                çc1 = int(input("1.sayiyi giriniz: "))
+                çc2 = int(input("2.sayiyi giriniz: "))
+                print ("Sonuç: " , çc1*çc2)
+                terminal = input("Komut giriniz: ")
+        
+            if terminal == "bolme islemi":
+                print("NOT: 1.sayinin 2.sayidan buyuk olmasina dikkat ediniz.")
+                bc1 = int(input("1.sayiyi giriniz: "))
+                bc2 = int(input("2.sayiyi giriniz: "))
+                print ("Sonuç: " , bc1/bc2)
+                terminal = input("Komut giriniz: ")
+        
+            if terminal == "hakkinda":
+                print ("Visionsoft Karaağaç Pratiksel İşletim Sistemi. Versiyon 0.25. Dil: Türkçe. Milli İşletim Sistemi. Anahtar kod: 'KK2025C'."),
+                terminal = input("Komut giriniz: ") 
+    else:
+        print("Yanlis anahtar kod. Lutfen tekrar deneyiniz.")
+        anahtarkod = input("Anahtar Kodu Giriniz: ")
+    

@@ -1,0 +1,50 @@
+print("Visionsoft Karaağaç Pratiksel İşletim Sistemi")
+anahtarkod = input("Anahtar Kodu Giriniz: ")
+
+while True:
+
+    if anahtarkod == "KK2025C":
+        print("Oturum açılıyor...(admin)")
+        terminal = input("Komut yada dosya konumu giriniz: ")
+        while True:
+
+            if terminal == "kapat":
+                exit() 
+    
+            if terminal == "toplama islemi.mth":
+                tc1 = int(input("1.sayiyi giriniz: "))
+                tc2 = int(input("2.sayiyi giriniz: "))
+                print ("Sonuç: " , tc1 + tc2)
+                terminal = input("Komut yada dosya konumu giriniz: ")
+    
+            if terminal == "cikarma islemi.mth":
+                cc1 = int(input("1.sayiyi giriniz: "))
+                cc2 = int(input("2.sayiyi giriniz: "))
+                print ("Sonuç: " , cc1 - cc2)
+                terminal = input("Komut yada dosya konumu giriniz: ")
+        
+            if terminal == "carpma islemi.mth":
+                çc1 = int(input("1.sayiyi giriniz: "))
+                çc2 = int(input("2.sayiyi giriniz: "))
+                print ("Sonuç: " , çc1*çc2)
+                terminal = input("Komut yada dosya konumu giriniz: ")
+        
+            if terminal == "bolme islemi.mth":
+                print("NOT: 1.sayinin 2.sayidan buyuk olmasina dikkat ediniz.")
+                bc1 = int(input("1.sayiyi giriniz: "))
+                bc2 = int(input("2.sayiyi giriniz: "))
+                print ("Sonuç: " , bc1/bc2)
+                terminal = input("Komut yada dosya konumu giriniz: ")
+        
+            if terminal == "hakkinda.abo":
+                print ("Visionsoft Karaağaç Pratiksel İşletim Sistemi. Versiyon 0.26. Dil: Türkçe. Milli İşletim Sistemi. Anahtar kod: 'KK2025C'."),
+                terminal = input("Komut yada dosya konumu giriniz: ") 
+                
+            if terminal == "server_info.abo":
+                print ("Server Adı: main.py Server IP: 225154.66.2. Server Oluşturulma Tarihi: 23.05.2025. Server Kod Adı: karaagac. Server Oluşturucusu: Visionsoft CSC.")
+                terminal = input("Komut yada dosya konumu giriniz: ")
+                       
+    else:
+        print("Yanlis anahtar kod. Lutfen tekrar deneyiniz.")
+        anahtarkod = input("Anahtar Kodu Giriniz: ")
+    

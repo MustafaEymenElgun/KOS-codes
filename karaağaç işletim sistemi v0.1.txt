@@ -1,0 +1,21 @@
+print("Visionsoft Karaağaç İşletim Sistemi v0.1. Python Diliyle Yazılmış, pratik için geliştirilen bir işletim sistemidir. Visionsoft Computer Science Corporation, 2025.")
+terminal = input("Komut giriniz: ")
+
+while True:
+
+    if terminal == "kapat":
+        exit() 
+
+    if terminal == "toplama islemi":
+        tc1 = int(input("1.sayiyi giriniz: "))
+        tc2 = int(input("2.sayiyi giriniz: "))
+        print ("Sonuç: " , tc1 + tc2)
+        terminal = input("Komut giriniz: ")
+    
+    if terminal == "cikarma islemi":
+        cc1 = int(input("1.sayiyi giriniz: "))
+        cc2 = int(input("2.sayiyi giriniz: "))
+        print ("Sonuç: " , cc1 - cc2)
+        terminal = input("Komut giriniz: ")
+        
+    if termi
